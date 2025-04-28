@@ -6,6 +6,8 @@ import tempfile
 import logging
 import sys
 from pathlib import Path
+import sys
+sys.path.append(r'C:\Users\Soham\Desktop\Soham\atp_idc\assets\models')
 
 # Add the models directory to Python path
 models_path = str(Path(__file__).parent / "assets" / "models")
@@ -14,7 +16,7 @@ sys.path.append(models_path)
 # Now import your detector
 try:
     from ai_model_research_paper import ArXivPlagiarismDetector
-except ImportError:
+except ImportError as e:
     try:
         # Try alternative naming if needed
         from ai_model_research_paper import ArXivPlagiarismDetector as Detector
