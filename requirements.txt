@@ -4,3 +4,13 @@ whisper
 pathlib
 gunicorn
 numpy
+Pillow
+pytesseract
+PyPDF2
+imagehash
+scikit-learn
+sentence-transformers
+faiss-cpu
+opencv-python
+tqdm
+
